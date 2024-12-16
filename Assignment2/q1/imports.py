@@ -11,6 +11,8 @@ from torch_geometric.utils import from_networkx
 import numpy as np
 import random
 import argparse
+from torch_geometric.utils import add_remaining_self_loops, degree
+from torch_scatter import scatter
 
 
 
@@ -55,10 +57,6 @@ class GCN(nn.Module):
         
         return F.log_softmax(x, dim=1)
     
-
-
-from torch_geometric.utils import add_remaining_self_loops, degree
-from torch_scatter import scatter
 
 def propagate(x, edge_index, edge_weight = None):
     # This will do feature propagation for a given graph based on adjacency matrix
