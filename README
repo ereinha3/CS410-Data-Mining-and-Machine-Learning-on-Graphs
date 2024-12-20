@@ -1,0 +1,19 @@
+This repository contains the curricular work for CS410 Data Mining and Machine Learning on Graphs.
+
+Assignment 1:
+
+This assignment covers conceptual understanding of networks, network attributes, random graph construction, degree distibution, degree centrality, graph visualization and other graph related concepts.
+This assignment was partially written and partially coded. My code is contained in ./Assignment1. Instructions are provided in the README of that directory.
+
+Assignment 2: 
+
+This assignment covers Node Classification over datasets with varying homophily and hyper-parameter tuning for a recommender system.
+	- Question 1:
+		i. Requires the construction of several models (MLP, Label Propagation, GNN) to achieve node classification. 
+		ii. Requires the construction of the Stochastic Block Model to generate networks with varying homophily.
+	- Question 2:
+		i. Uses the RecBole library to load existing models and tune hyperparameters to achieve higher accuracies.
+
+Final Project:
+
+My final project took a deep dive into experimentation with different models for the task of node-classification. I created various architectures for various graph-based models and analyzed performance on datasets with high homophily. I created a report to summarize my procedure and findings.
